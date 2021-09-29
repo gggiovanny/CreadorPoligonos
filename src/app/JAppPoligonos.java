@@ -131,7 +131,7 @@ public class JAppPoligonos extends JFrame
 		btnDibujar.setBounds(84, 387, 89, 23);
 		panel.add(btnDibujar);
 		
-		JSlider sldLados = new JSlider();
+		final JSlider sldLados = new JSlider();
 		sldLados.setValue(0);
 		sldLados.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {				
@@ -144,7 +144,7 @@ public class JAppPoligonos extends JFrame
 		sldLados.setBounds(34, 126, 200, 26);
 		panel.add(sldLados);
 		
-		JSlider sldRadio = new JSlider();
+		final JSlider sldRadio = new JSlider();
 		sldRadio.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
 				poligono.setRadio(sldRadio.getValue());
@@ -157,7 +157,7 @@ public class JAppPoligonos extends JFrame
 		sldRadio.setBounds(34, 206, 200, 26);
 		panel.add(sldRadio);
 		
-		JSlider sldAnguloInicial = new JSlider();
+		final JSlider sldAnguloInicial = new JSlider();
 		sldAnguloInicial.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
 				poligono.setAnguloInicial(sldAnguloInicial.getValue());
@@ -170,7 +170,7 @@ public class JAppPoligonos extends JFrame
 		sldAnguloInicial.setBounds(34, 297, 200, 26);
 		panel.add(sldAnguloInicial);
 		
-		JCheckBox chkVerRadios = new JCheckBox("Ver radios");
+		final JCheckBox chkVerRadios = new JCheckBox("Ver radios");
 		chkVerRadios.addChangeListener(new ChangeListener() {
 			public void stateChanged(ChangeEvent e) {
 				if(chkVerRadios.isSelected())
